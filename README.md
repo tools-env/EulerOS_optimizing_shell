@@ -16,11 +16,11 @@ EulerOS默认安全设置的挺高的.比如
 因此在使用该脚本前,先要确保已经设置好网络并且能ssh上后再执行.下面给出系统安装好以后可能需要手工设置的一些地方
 
 ## 打开网络
-1、cd /etc/sysconfig/network-scripts/ 
-2、ls查看网卡
-3、修改该文件 vi ifcfg-ens33
-4、我们需要首先找到ONBOOT=no ，需要修改为ONBOOT=yes然后保存退出。 
-5、service network restart #重启网络服务
+* cd /etc/sysconfig/network-scripts/ 
+* ls查看网卡
+* 修改该文件 vi ifcfg-ens33
+* 我们需要首先找到ONBOOT=no ，需要修改为ONBOOT=yes然后保存退出。 
+* service network restart #重启网络服务
 
 ## 创建用户
 
@@ -73,6 +73,16 @@ chmod -v u-w /etc/sudoers # 还原设置文件的只读
 \#  安装Maven环境
 
 \#   安装node v12.7.0环境
+
+
+
+## 使用方式
+
+```shell
+ sudo ./eulerOS.sh
+   或者
+ ./eulerOS.sh
+```
 
 
 
